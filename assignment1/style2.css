@@ -1,0 +1,96 @@
+.mainbox
+{
+    width: 340px;
+    min-height: 520px;
+    margin: 75px 470px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+
+#first
+{
+    color: hsl(0, 0%, 100%); 
+    margin-top: 25px; 
+    text-align: center; 
+    font-size: 28px;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.young-serif-regular 
+{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.outfit-font 
+{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400 ;
+    font-style: normal;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 12px;
+}
+
+li
+{
+    padding: 12px;
+    background-color: hsl(0, 0%, 20%);
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 50px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+li:hover
+{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+#p-one
+{
+    color: hsl(75, 94%, 57%);
+    font-size: 16px; 
+    text-align: center;
+    margin-top: -15px;
+}
+
+#p-two
+{
+    text-align: center;
+    color: hsl(0, 0%, 45%);
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+a
+{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover
+{
+    color: black;
+}

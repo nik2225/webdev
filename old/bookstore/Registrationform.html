@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+
+     <style>
+        
+.box
+{
+    max-width: 600px;
+    background-color: aliceblue;
+    box-shadow: 0px 10px 32px rgba(0,0,0,0.1);
+    margin-left: 340px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+}
+
+#submit
+    {
+    padding: 20px 40px;
+    border-radius: 250px;
+    background-color: rgb(164, 193, 209);
+    font-size: 15px;
+    }
+
+    </style>
+    </head>
+	
+<body>
+	<div style="text-align: center;">
+<br>
+
+<br>
+<form>
+    <section class="box">
+      <br>  
+	  <h1>Personal Details</h1>
+	<label>Name</label>
+	<input type="text" name="Name">
+	<br>
+	<br>
+	<label>password</label>
+	<input type="password" name="password">
+	<br>
+	<br>
+	<label>Email</label>
+	<input type="email" name="email">
+	<br>
+	<br>
+	<label>select gender</label>
+	<input type="radio" name="gender" value="Female"><label>Female</label>
+	<input type="radio" name="gender" value="male"><label>Male</label>
+	<br>
+	<br>
+	<label>contact</label>
+	<input type="number" name="contact">
+	<br>
+	<br>
+    <label>Address</label>
+	<textarea></textarea>
+    <br>
+	
+	<h1>Educational Quallification</h1>
+	<label for="degree">Choose Year</label>
+	<select name="degree" id="degreee">
+		<option value=" FY" >FY</option>
+		<option value=" SY">SY</option>
+		<option value=" TY">TY</option>
+		<option value=" BY">BY</option>
+		
+</select>
+<br>
+		<br>
+<label for="engineering">Choose </label>
+	<select name="department" id="department">
+		<option value="IT">IT</option>
+		<option value=" CS">CS</option>
+		<option value=" ENTC">ENTC</option>
+		<option value=" AI">AI</option>
+</select>
+<br>
+	<br>
+	<input type="button" name="submit" value="submit" id="submit">
+    <br>
+    <br>
+</div>
+</section>
+</form>
+<script>
+    const scriptURL =
+    "https://docs.google.com/spreadsheets/d/1JjKK0IhLqxm1p1TV5xLeasclLlSbNjeJyOHiy_5JrcQ/edit#gid=0";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message send successfully!";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 3000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.flex-container
+{
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.flex-child
+{
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+#flex1
+{
+    background-color: rgb(248, 186, 245);
+    flex-grow: 2;
+}
+
+
+#flex2
+{
+    background-color: aqua;
+    flex-grow: 3;
+}
+
+#flex3
+{
+    background-color: rgb(211, 237, 149);
+}
+
+#flex4
+{
+    background-color: rgb(255, 0, 179);
+}
+
+#flex5
+{
+    background-color: rgb(17, 255, 0);
+}
+
+#flex6
+{
+    background-color: rgb(255, 0, 4);
+}

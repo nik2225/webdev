@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Coffee Corner</title>
+    <style>
+body {
+    font-family: URW Chancery L, cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+#heading1
+{
+    margin-top: 10rem;
+    margin-left: 11rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 5rem;
+}
+
+header {
+    position: relative;
+    height: 60vh;
+    color: #c7b198;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#homeimg
+{
+    width: 100%;
+    height: 100%;
+    margin-top: -25%;
+}
+
+main {
+    padding: 20px;
+}
+
+#about {
+    margin-bottom: 50px;
+    background-color: #f0ece2;
+    /* First color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    flex: 1;
+    height: 100%;
+    background-color: #dfd3c3;
+    /* Second color */
+    background-size: cover;
+    background-position: center;
+    animation: slide 8s infinite;
+}
+
+#contact
+{
+    margin-bottom: 5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background-color: #c7b198;
+    /* Third color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 50px);
+    margin-bottom: 20px;
+}
+
+.menu-item h4 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    font-weight: bold;
+}
+
+.image-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#img1{
+    padding: 1rem;
+    width: 45%;
+    height: 10%;
+}
+
+#img2{
+    padding: 1rem;
+    width: 45%;
+    height: 30%;
+}
+
+#img3{
+    padding: 1rem;
+    width: 45%;
+    height: 30%;
+}
+
+#img4{
+    padding: 1rem;
+    width: 45%;
+    height: 30%;
+}
+
+#img5{
+    width: 100%;
+    margin-top: -25rem;
+}
+
+footer {
+    background-color: #596e79;
+    /* Fourth color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading1">Welcome to Cozy Coffee Corner</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="/images/5.jpg" alt="Coffee Cup" id="img5">
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Cozy Coffee Corner, we believe in providing our customers with the best coffee experience. Our cozy atmosphere and carefully crafted brews will make you feel right at home.</p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Espresso</h4>
+                        <p>A shot of intense coffee with rich flavor.</p>
+                        <span>$2.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Cappuccino</h4>
+                        <p>Espresso with steamed milk and a layer of froth.</p>
+                        <span>$3.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Latte</h4>
+                        <p>Espresso with steamed milk and a small amount of froth.</p>
+                        <span>$3.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Americano</h4>
+                        <p>Espresso with hot water, creating a coffee with a similar strength to traditional coffee.</p>
+                        <span>$2.75</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mocha</h4>
+                        <p>Espresso with steamed milk, chocolate syrup, and topped with whipped cream.</p>
+                        <span>$4.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Macchiato</h4>
+                        <p>Espresso with a small amount of steamed milk.</p>
+                        <span>$3.25</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quotes">
+            <div class="container">
+                <h2>Discover Your Perfect Blend</h2>
+                <div class="quote-container">
+                    <p class="quote">"Life's too short for bad coffee."</p>
+                    <p class="quote">"First I drink the coffee. Then I do the things."</p>
+                    <p class="quote">"Behind every successful person is a substantial amount of coffee."</p>
+                    <p class="quote">"Coffee: because adulting is hard."</p>
+                    <p class="quote">"Espresso yourself."</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="image-container">
+                    <img src="/images/1.jpg" alt="Coffee Cup" id="img1">
+                    <img src="/images/2.jpg" alt="Coffee Beans"id="img2">
+                    <img src="/images/3.jpg" alt="Coffee Pour"id="img3">
+                    <img src="/images/4.jpg" alt="Coffee Art"id="img4">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have any questions or feedback? Reach out to us!</p>
+                <p>Email: info@cozycoffeecorner.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cozy Coffee Corner. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

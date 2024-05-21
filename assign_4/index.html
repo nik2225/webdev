@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+<style>
+      .xyz
+    {
+        max-width: 500px;
+        min-height: 800px;
+        background-color: white;
+        border-radius: 13px; 
+        margin-left: 380px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      
+    }
+    .abc
+    {
+        margin:40px;
+    }
+
+    .innerblo
+    {
+        padding: 25px;
+    }
+
+    .young-serif-regular {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .outfit-font {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 10px;
+        color: hsl(30, 10%, 34%);
+      
+      }
+
+      .pinkkbox
+      {
+        max-width: 400px;
+        padding: 20px;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 10px;
+        font-size: 14px;
+        max-height: 75px;
+      }
+
+      .prepp
+      {
+        color: hsl(30, 10%, 34%); 
+        font-weight: bold;
+        display: inline;
+        font-size: 10px;
+      }
+
+      #prep-heading
+      {
+        color: hsl(332, 51%, 32%);
+        font-weight: bold;
+      }
+
+      li{
+        color:hsl(30, 10%, 34%);
+        font-size: 10px;
+      }
+
+      h1.young-serif-regular
+      {
+        margin-bottom: 8px; 
+      }
+
+    ul {
+        list-style: none; 
+        padding: 0; 
+    }
+
+    .pinkkbox li {
+        margin-left: 20px; 
+        position: relative;
+    }
+
+    .pinkkbox li::before {
+        content: '\2022'; 
+        color: hsl(332, 51%, 32%); 
+        font-size: 1.2em; 
+        margin-right: 5px; 
+        position: absolute;
+        left: -15px; 
+        top: -2px;
+    }
+
+    li {
+      margin-bottom: 6px; 
+    }
+
+    .ingredients-list {
+      margin-left: 8px; 
+      margin-top: 10px; 
+    }
+
+    .ingredients-list li {
+      position: relative;
+      padding-left: 20px; 
+    }
+
+    .ingredients-list li::before {
+      content: '\25A0'; 
+      color: hsl(14, 45%, 36%);
+      font-size: 0.5em; 
+      margin-right: 5px;
+      position: absolute;
+      left: -4px; 
+      top: 2px; 
+    }
+
+    hr {
+      border: 1px solid hsl(30, 18%, 87%);
+    }
+
+    ol
+    {
+      list-style: none;
+    }
+
+    .Instruction-list {
+      margin-left: -30px; 
+      margin-top: -10px; 
+    }
+
+    .Instruction-list li {
+      position: relative;
+      padding-left: 20px;
+    }
+    .Instruction-list li::before {
+      content: counter(list-item) "."; 
+      color: hsl(14, 45%, 36%); 
+      font-size: 1.0em; 
+      margin-right: 5px; 
+      position: absolute;
+      left: -4px; 
+      top: 2px; 
+      font-weight: 800;
+    }
+    .nutrition-table {
+      margin-top: 10px; 
+      margin-bottom: 20px; 
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: -10px; 
+      margin-left: 10px;
+    }
+
+    td {
+      padding: 8px;
+      margin-left: 20px;
+      color: hsl(14, 45%, 36%);
+      font-weight: bold;
+    }
+
+    tr:not(:last-child) td {
+      border-bottom: 1px solid  hsl(30, 18%, 87%) /* Border color for the bottom of each cell, excluding the last row */
+    }
+
+</style>
+</head>
+<body style=" background-color: hsl(30, 54%, 90%);">
+    <div class="xyz">
+          <div class="innerblo">
+            <h1 class="young-serif-regular">Simple Omelette Recipe</h1> 
+            <div class="outfit-font">
+                An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+                to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+                <br>
+                <br> <br>
+        <div class="pinkkbox">
+          <div id="prep-heading">Preparation time</div>
+            <ul>
+              <li><div class="prepp">Total</div>: Approximately 10 minutes</li> 
+              <li><div class="prepp">Preparation</div>: 5 minutes</li>
+              <li ><div class="prepp">Cooking</div>: 5 minutes</li>
+            </ul>
+        </div>
+        <br>
+        <div class="young-serif-regular" style="color:hsl(14, 45%, 36%);font-size: 20px;"> Ingredients</div>
+       
+        <ul class="ingredients-list">
+  <li>2-3 large eggs</li>
+  <li>Salt, to taste</li>
+  <li>Pepper, to taste</li>
+  <li>1 tablespoon of butter or oil</li>
+  <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+</ul>
+<br>
+<hr>
+<br>
+<div class="young-serif-regular" style="color:hsl(14, 45%, 36%);font-size: 20px;">Instructions</div> 
+<br>
+<div class="Instruction-list">
+<ol>
+
+  <li><div class="prepp">Beat the eggs</div> : In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+    You can add a tablespoon of water or milk for a fluffier texture.
+  </li>
+  <li><div class="prepp">Heat the pan</div> : Place a non-stick frying pan over medium heat and add butter or oil.</li>
+  <li><div class="prepp">Cook the omelette</div>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+    the eggs evenly coat the surface.</li>
+  <li>
+    <div class="prepp">Add fillings (optional)</div> : When the eggs begin to set at the edges but are still slightly runny in the 
+    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+  <li>
+    <div class="prepp">Fold and serve</div> : As the omelette continues to cook, carefully lift one edge and fold it over the 
+    fillings. Let it cook for another minute, then slide it onto a plate.
+  </li>
+  <li>
+    <div class="prepp">Fold and serve</div> : As the omelette continues to cook, carefully lift one edge and fold it over the 
+    fillings. Let it cook for another minute, then slide it onto a plate.
+  </li>
+</ol>
+</div>
+<br>
+<hr>
+<br>
+
+<div class="young-serif-regular" style="color:hsl(14, 45%, 36%);font-size: 20px;">Nutrition</div> 
+<br>
+  The table below shows nutritional values per serving without the additional fillings.
+  <br><br>
+
+<div class="nutrition-table">
+  <table>
+      <tr>
+          <td>Calories</td>
+          <td>277kcal</td>
+      </tr>
+      <tr>
+          <td>Carbs</td>
+          <td>0g</td>
+      </tr>
+      <tr>
+          <td>Protein</td>
+          <td>20g</td>
+      </tr>
+      <tr>
+          <td>Fat</td>
+          <td>22g</td>
+      </tr>
+  </table>
+</div>

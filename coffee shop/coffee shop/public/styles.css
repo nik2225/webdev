@@ -1,0 +1,160 @@
+
+body {
+    font-family: URW Chancery L, cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+#heading1
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 0.5rem;
+}
+
+header {
+    position: relative;
+    height: 60vh;
+    color: #c7b198;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #596e79;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#homeimg
+{
+    width: 100%;
+    height: 100%;
+    margin-top: -25%;
+}
+
+main {
+    padding: 20px;
+}
+
+#about {
+    margin-bottom: 50px;
+    background-color: #f0ece2;
+    /* First color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    flex: 1;
+    height: 100%;
+    background-color: #dfd3c3;
+    /* Second color */
+    background-size: cover;
+    background-position: center;
+    animation: slide 8s infinite;
+}
+
+#contact
+{
+    margin-bottom: 5rem;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background-color: #c7b198;
+    /* Third color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 50px);
+    margin-bottom: 20px;
+}
+
+.menu-item h4 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #596e79;
+    /* Fourth color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+}
